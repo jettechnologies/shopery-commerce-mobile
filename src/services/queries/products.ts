@@ -1,5 +1,5 @@
+import { fetchClient } from "@/utils/api-client";
 import { queryOptions } from "@tanstack/react-query";
-import { fetchClient } from "@utils/api-client";
 import { QUERY_KEYS, type ProductFilterParams } from "../query-keys";
 
 export interface Product {

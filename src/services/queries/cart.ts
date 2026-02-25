@@ -1,6 +1,6 @@
-import { useMutation, queryOptions } from "@tanstack/react-query";
-import { fetchClient } from "@utils/api-client";
-import { useToastContext } from "@hooks/context";
+import { useToastContext } from "@/hooks/context";
+import { fetchClient } from "@/utils/api-client";
+import { queryOptions, useMutation } from "@tanstack/react-query";
 import { QUERY_KEYS } from "../query-keys";
 
 export interface CartItem {

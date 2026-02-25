@@ -1,13 +1,12 @@
+import type { ToastStatus } from "@/context/toast-provider";
+import { useToastContext } from "@/hooks/context";
 import {
   MutationCache,
   QueryClient,
   QueryClientProvider,
   type QueryKey,
 } from "@tanstack/react-query";
-import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
-import { useToastContext } from "@hooks/context";
-import type { ToastStatus } from "@context/toast-provider";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 // import { toast } from "sonner";
 
 // Extend MutationMeta to allow our custom keys
@@ -90,7 +89,7 @@ function TanstackQueryProvider({
   return (
     <QueryClientProvider client={queryClient}>
       {children}
-      <ReactQueryDevtools initialIsOpen={false} />
+      {/* <ReactQueryDevtools initialIsOpen={false} /> */}
     </QueryClientProvider>
   );
 }

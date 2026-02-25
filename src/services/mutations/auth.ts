@@ -1,7 +1,6 @@
+import { useToastContext } from "@/hooks/context";
+import { fetchClient } from "@/utils/api-client";
 import { useMutation } from "@tanstack/react-query";
-import { fetchClient } from "@utils/api-client";
-import { useToastContext } from "@hooks/context";
-import { QUERY_KEYS } from "../query-keys";
 
 // Types derived from backend Swagger
 export interface RegisterUser {
